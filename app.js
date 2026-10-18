@@ -33,8 +33,10 @@
       url: "https://play.google.com/store/apps/details?id=com.yourcardjourney.cardvault", glow: "rgba(124,58,237,.40)" },
     { g: "apps", id: "giftcardvault", name: "Gift Card Vault", tag: "Every voucher, secured.",
       url: "https://play.google.com/store/apps/details?id=com.yourcardjourney.giftcardvault", glow: "rgba(58,47,201,.40)" },
-    { g: "apps", id: "desktop", name: "Desktop apps", tag: "Windows and Mac.",
-      url: "https://yourcardjourney.store/download/", glow: "rgba(30,41,59,.36)" },
+    { g: "apps", id: "rupayredeem", name: "RuPay Redeem", tag: "RuPay offers, redeemed.",
+      url: "https://yourcardjourney.store/download/", glow: "rgba(245,158,11,.42)" },
+    { g: "apps", id: "cardledger", name: "Card Ledger", tag: "Every card. One ledger.",
+      url: "https://yourcardjourney.store/download/", glow: "rgba(14,163,113,.40)" },
   ];
 
   const MASTER = "ycj.home.master";              // the derived key, never the key itself

@@ -11,12 +11,12 @@ Local preview: `python -m http.server 8772 --directory ycj-home` (launch entry `
 |---|---|
 | Gold boards | Karat Board, AmazonGold, FlipkartGold, BlinkDeal |
 | Deals & rewards | GiftDeals, Reward Switch, WhichBike |
-| Apps | Card Vault, Gift Card Vault (Play Store), Desktop apps (store download page) |
+| Apps | Card Vault, Gift Card Vault (Play Store), RuPay Redeem, Card Ledger (Windows, store download page) |
 
 Header: the **WhatsApp bell** (deal-alerts channel; rings on arrival and every 30 s)
 and the **master padlock**.
 
-Local-only tools (Card Ledger, loaders, RuPay Redeem, Quick
+Local-only tools (loaders, RuPay Redeem, Quick
 Mailer, Focus Sprint) are deliberately left off: they are not live tools.
 
 ## Adding a tool
