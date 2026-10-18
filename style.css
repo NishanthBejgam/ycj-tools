@@ -54,19 +54,9 @@ button { font: inherit; color: inherit; }
 
 /* ---------------------------------------------------------------- nav */
 .nav {
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  display: flex; align-items: center; justify-content: flex-end; gap: 12px;
   padding: 14px max(20px, env(safe-area-inset-right)) 10px max(20px, env(safe-area-inset-left));
 }
-.brand { display: flex; align-items: center; gap: 11px; min-width: 0; }
-.brand-mark { width: 38px; height: 38px; display: block; filter: drop-shadow(0 6px 12px rgba(10,10,11,.22)); }
-.brand-text { display: flex; flex-direction: column; line-height: 1; }
-.brand-text b { font-size: 19px; font-weight: 700; letter-spacing: -.03em; white-space: nowrap; }
-.brand-text em {
-  font-style: normal;
-  background: linear-gradient(100deg, #6366f1, #a855f7 55%, #ec4899);
-  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
-}
-.brand-text small { margin-top: 4px; font-size: 9.5px; font-weight: 600; letter-spacing: .14em; color: var(--muted); }
 .nav-right { display: flex; align-items: center; gap: 8px; }
 
 /* the WhatsApp bell - a green pill that rings when you arrive */
@@ -291,9 +281,6 @@ main {
 @media (max-width: 640px) {
   main { padding: 10px 16px 8px; }
   .nav { padding: 12px 16px 6px; gap: 8px; }
-  .brand-text small { display: none; }
-  .brand-text b { font-size: 17px; }
-  .brand-mark { width: 34px; height: 34px; }
   .alert { padding: 0 6px; }
   .alert-txt { display: none; }
   .group { padding: 10px 6px 8px; border-radius: 24px; }
