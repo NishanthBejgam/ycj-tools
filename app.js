@@ -21,6 +21,10 @@
       url: "https://flipkartgold.yourcardjourney.store", glow: "rgba(40,116,240,.40)" },
     { g: "gold", id: "blinkdeal", name: "BlinkDeal", tag: "Myntra gold, in a blink.",
       url: "https://blinkdeal.yourcardjourney.store", glow: "rgba(255,63,108,.40)" },
+    // Ready, not live yet: drop `off` once ajiogold.yourcardjourney.store is published
+    // (and move one gold board out - four per tower keeps the page on one screen).
+    { g: "gold", id: "ajiogold", name: "AjioGold", tag: "AJIO gold, coupon stacked.", off: true,
+      url: "https://ajiogold.yourcardjourney.store", glow: "rgba(44,65,82,.42)" },
 
     { g: "deals", id: "giftdeals", name: "GiftDeals", tag: "Gift-card coupons.",
       url: "https://giftdeals.yourcardjourney.store", glow: "rgba(15,118,110,.40)" },
@@ -51,7 +55,7 @@
   function render() {
     let i = 0;
     $("#groups").innerHTML = GROUPS.map((g, gi) => {
-      const list = TOOLS.filter((t) => t.g === g.id);
+      const list = TOOLS.filter((t) => t.g === g.id && !t.off);
       const tiles = list.map((t) => {
         const bc = back && back.broadcast && back.broadcast[t.id];
         return `
