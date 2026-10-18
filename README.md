@@ -10,13 +10,13 @@ Local preview: `python -m http.server 8772 --directory ycj-home` (launch entry `
 | Group | Tools |
 |---|---|
 | Gold boards | Karat Board, AmazonGold, FlipkartGold, BlinkDeal |
-| Deals & rewards | GiftDeals, Voucher Deals, Reward Switch, WhichBike |
-| Stay in the loop | Mini Statement, Karat Alerts (Telegram), X, Reddit |
+| Deals & rewards | GiftDeals, Reward Switch, WhichBike |
+| Apps | Card Vault, Gift Card Vault (Play Store), Desktop apps (store download page) |
 
 Header: the **WhatsApp bell** (deal-alerts channel; rings on arrival and every 30 s)
 and the **master padlock**.
 
-Local-only apps (Card Vault, Card Ledger, Gift Card Vault, loaders, RuPay Redeem, Quick
+Local-only tools (Card Ledger, loaders, RuPay Redeem, Quick
 Mailer, Focus Sprint) are deliberately left off: they are not live tools.
 
 ## Adding a tool
@@ -24,7 +24,7 @@ Mailer, Focus Sprint) are deliberately left off: they are not live tools.
 1. Put its icon in `marks/<id>.svg` (copy the app's own `favicon.svg`).
 2. Add one line to `TOOLS` in `app.js` (group, id, name, tagline, url, glow colour).
 
-Keep four per group so the page fits one screen without scrolling.
+Keep at most four per group so the page fits one screen without scrolling.
 
 ## Master back office
 

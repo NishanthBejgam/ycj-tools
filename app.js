@@ -8,8 +8,8 @@
       svg: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.6"/>' },
     { id: "deals", label: "Deals & rewards", accent: "#e11d48",
       svg: '<path d="M13 3.5h7.5V11l-9 9a1.6 1.6 0 0 1-2.2 0L3.8 14.5a1.6 1.6 0 0 1 0-2.2z"/><circle cx="16.4" cy="7.6" r="1.2"/>' },
-    { id: "loop", label: "Stay in the loop", accent: "#0891b2",
-      svg: '<path d="M6 9a6 6 0 0 1 12 0c0 6.5 2.6 8.4 2.6 8.4H3.4S6 15.5 6 9z"/><path d="M10.2 20.6a2 2 0 0 0 3.6 0"/>' },
+    { id: "apps", label: "Apps", accent: "#7c3aed",
+      svg: '<rect x="6.5" y="2.8" width="11" height="18.4" rx="2.6"/><path d="M10.6 17.6h2.8"/>' },
   ];
 
   const TOOLS = [
@@ -24,21 +24,17 @@
 
     { g: "deals", id: "giftdeals", name: "GiftDeals", tag: "Gift-card coupons.",
       url: "https://giftdeals.yourcardjourney.store", glow: "rgba(15,118,110,.40)" },
-    { g: "deals", id: "deals", name: "Voucher Deals", tag: "Vouchers in stock.",
-      url: "https://deals.yourcardjourney.store", glow: "rgba(192,42,114,.40)" },
     { g: "deals", id: "rewardswitch", name: "Reward Switch", tag: "Rewards, decoded.",
       url: "https://rewardswitch.yourcardjourney.store", glow: "rgba(220,74,15,.40)" },
     { g: "deals", id: "whichbike", name: "WhichBike", tag: "Bikes, card offer off.",
       url: "https://whichbike.in", glow: "rgba(224,22,12,.36)" },
 
-    { g: "loop", id: "ministatement", name: "Mini Statement", tag: "Card news, in short.",
-      url: "https://ministatement-api.yourcardjourney.workers.dev", glow: "rgba(33,73,90,.42)" },
-    { g: "loop", id: "karatalerts", name: "Karat Alerts", tag: "Gold gaps, pinged.",
-      url: "https://t.me/KaratBoardAlertBot", glow: "rgba(138,95,20,.40)" },
-    { g: "loop", id: "x", name: "X", tag: "Deals, first on X.",
-      url: "https://x.com/YourCardJourney", glow: "rgba(10,10,11,.30)" },
-    { g: "loop", id: "reddit", name: "Reddit", tag: "Ask the community.",
-      url: "https://www.reddit.com/r/YCJOfficial/", glow: "rgba(255,69,0,.36)" },
+    { g: "apps", id: "cardvault", name: "Card Vault", tag: "Cards, safely locked.",
+      url: "https://play.google.com/store/apps/details?id=com.yourcardjourney.cardvault", glow: "rgba(124,58,237,.40)" },
+    { g: "apps", id: "giftcardvault", name: "Gift Card Vault", tag: "Every voucher, secured.",
+      url: "https://play.google.com/store/apps/details?id=com.yourcardjourney.giftcardvault", glow: "rgba(58,47,201,.40)" },
+    { g: "apps", id: "desktop", name: "Desktop apps", tag: "Windows and Mac.",
+      url: "https://yourcardjourney.store/download/", glow: "rgba(30,41,59,.36)" },
   ];
 
   const MASTER = "ycj.home.master";              // the derived key, never the key itself
