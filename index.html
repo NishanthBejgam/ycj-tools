@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YourCardJourney Tools</title>
+<meta name="description" content="Every YourCardJourney tool on one page: gold boards, deal boards, card news and alerts. Bookmark it once.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="./" aria-label="YourCardJourney tools">
+    <img class="brand-mark" src="favicon.svg" alt="">
+    <span class="brand-text"><b>YourCard<em>Journey</em></b><small>EVERY TOOL · ONE BOOKMARK</small></span>
+  </a>
+  <div class="nav-right">
+    <!-- Deal alerts: the WhatsApp channel every broadcast goes to. Rings on arrival. -->
+    <a class="alert" id="alert" href="https://www.whatsapp.com/channel/0029Vb6gU8QIt5rqf5Yxao0n"
+       target="_blank" rel="noopener" aria-label="Get instant deal alerts on our WhatsApp channel">
+      <span class="alert-bell" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><g class="bell-body"><path d="M6 9a6 6 0 0 1 12 0c0 6.5 2.6 8.4 2.6 8.4H3.4S6 15.5 6 9z"/><path d="M10.2 20.6a2 2 0 0 0 3.6 0"/></g></svg>
+        <i class="alert-dot"></i>
+      </span>
+      <span class="alert-txt">Deal alerts</span>
+    </a>
+    <!-- Masters only: opens the back office on this device; tap again to lock. -->
+    <button class="lock" id="lockBtn" type="button" aria-pressed="false" aria-label="Master sign in">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path class="shackle" d="M8 11V7.6a4 4 0 0 1 8 0V11"/>
+        <rect x="5" y="11" width="14" height="9.5" rx="2.4"/>
+        <circle class="keyhole" cx="12" cy="15.6" r="1.3"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Every tool. <em class="grad-word">One bookmark.</em></h1>
+    <button class="bm" id="bm" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.6l2.5 5.2 5.7.8-4.1 4 1 5.6L12 16.5l-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/></svg>
+      <span id="bmText">Bookmark this page</span>
+      <span class="keys" id="bmKeys"><kbd id="kMod">Ctrl</kbd><kbd>D</kbd></span>
+    </button>
+  </section>
+
+  <section class="groups" id="groups" aria-label="Tools"></section>
+
+  <section class="dock" id="dock" hidden aria-label="Master back office">
+    <span class="dock-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11V7.6a4 4 0 0 1 7.6-1.7"/><rect x="5" y="11" width="14" height="9.5" rx="2.4"/></svg>Master</span>
+    <div class="dock-items" id="dockItems"></div>
+  </section>
+</main>
+
+<footer class="site-credit">
+  <img src="yourcardjourney.png" alt="" onerror="this.style.display='none'">
+  <span>Shared by <span class="handle">@YourCardJourney</span></span>
+</footer>
+
+<!-- The master key. Opened only from the padlock. -->
+<div class="scrim" id="scrim" hidden>
+  <form class="keycard" id="keyForm" autocomplete="off">
+    <span class="kc-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M8 11V7.6a4 4 0 0 1 8 0V11"/><rect x="5" y="11" width="14" height="9.5" rx="2.4"/><circle cx="12" cy="15.6" r="1.3"/></svg>
+    </span>
+    <h2>Master key</h2>
+    <p>Opens the back office on this device. Tap the padlock again to lock it.</p>
+    <input type="password" id="keyInput" class="key-in" placeholder="key" spellcheck="false" aria-label="Master key">
+    <p class="key-err" id="keyErr" hidden>That key doesn't open it.</p>
+    <div class="key-row">
+      <button type="button" class="key-cancel" id="keyCancel">Cancel</button>
+      <button type="submit" class="key-go" id="keyGo">Open</button>
+    </div>
+  </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
