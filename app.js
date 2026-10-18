@@ -109,22 +109,6 @@
     setTimeout(() => a.classList.add("seen"), 500);
   }
 
-  /* ---------------------------------------------------------------- bookmark chip */
-  const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
-  const isTouch = matchMedia("(hover: none)").matches;
-  if (isMac) $("#kMod").textContent = "⌘";
-  if (isTouch) {                                 // phones: no keyboard - offer Home screen via the share sheet
-    $("#bmText").textContent = "Add to Home screen";
-    $("#bmKeys").hidden = true;
-  }
-  $("#bm").addEventListener("click", async () => {
-    const b = $("#bm");
-    b.classList.remove("pressed"); void b.offsetWidth; b.classList.add("pressed");
-    if (isTouch && navigator.share) {
-      try { await navigator.share({ title: document.title, url: location.href }); } catch (e) { /* closed */ }
-    }
-  });
-
   /* ---------------------------------------------------------------- master vault */
   const b64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
   const toB64 = (u) => btoa(String.fromCharCode(...new Uint8Array(u)));
