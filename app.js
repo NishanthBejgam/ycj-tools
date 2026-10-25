@@ -32,6 +32,8 @@
       url: "https://rewardswitch.yourcardjourney.store", glow: "rgba(220,74,15,.40)" },
     { g: "deals", id: "whichbike", name: "WhichBike", tag: "Bikes, card offer off.",
       url: "https://whichbike.in", glow: "rgba(224,22,12,.36)" },
+    { g: "deals", id: "brands", name: "Brands", tag: "Brand deals, card off.",
+      url: "https://brands.yourcardjourney.store", glow: "rgba(255,63,108,.40)" },
 
     { g: "apps", id: "cardvault", name: "Card Vault", tag: "Cards, safely locked.",
       url: "https://play.google.com/store/apps/details?id=com.yourcardjourney.cardvault", glow: "rgba(124,58,237,.40)" },
